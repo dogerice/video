@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>video.js</title>
+    <link href="https://unpkg.com/video.js@6.11.0/dist/video-js.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/video.js@6.11.0/dist/video.min.js"></script>
+    <script src="https://unpkg.com/videojs-flash/dist/videojs-flash.js"></script>
+    <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+  </head>
+  <body>
+    <video id="my-player" class="video-js" controls>
+        <source src="rtmp://10.16.3.232:1935/live/111" type="rtmp/flv">
+        <p class="vjs-no-js">
+          not support
+        </p>
+    </video>
+    <video id="my-player2" class="video-js" controls>
+        <source src="rtmp://10.16.3.232:1935/live/112" type="rtmp/flv">
+        <p class="vjs-no-js">
+          not support
+        </p>
+    </video>
+    <video id="my-player3" class="video-js" controls>
+        <source src="rtmp://10.16.3.232:1935/live/113" type="rtmp/flv">
+        <p class="vjs-no-js">
+          not support
+        </p>
+    </video>
+    <script type="text/javascript">
+      var player = videojs('my-player',{
+        width:600,
+        heigh:400
+      });
+      var player2 = videojs('my-player2',{
+        width:600,
+        heigh:400
+      });
+      var player3 = videojs('my-player3',{
+        width:600,
+        heigh:400
+      });
+    </script>
+  </body>
