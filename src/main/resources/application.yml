@@ -1,2 +1,10 @@
 server:
   port: 8899
+spring:
+  application:
+    name: video-service
+  datasource:
+    url: jdbc:mysql://10.16.3.4:3306/people_street?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: hisense_smartcity
+    driver-class-name: com.mysql.jdbc.Driver
